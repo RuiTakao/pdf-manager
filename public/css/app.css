@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.base_container {
+    background: #fafafa;
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.mt32 {
+    margin-top: 32px !important;
+}
+
+.alert {
+    width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    margin-bottom: 16px;
+}
+
+.alert-title {
+    font-size: 12px;
+}
+
+.alert-success {
+    color: #0f5132;
+    background: #d1e7dd;
+    border-color: #badbcc;
+}
+
+.alert-error {
+    color: #842029;
+    background: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+.button {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: #777;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.button:hover {
+    background: #444;
+}
+
+.header {
+    background: #DC1D23;
+    padding: 8px 0;
+}
+
+.header_title {
+    color: #fff;
+}
+
+.main {
+    width: 100%;
+    padding: 32px;
+}
+
+.table_container {
+    margin: 0 auto;
+    width: 960px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #DC1D23;
+}
+
+.table,
+.th,
+.td {
+    border-collapse: collapse;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.table {
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.thead {
+    background: #DC1D23;
+}
+
+.th {
+    text-align: left;
+    color: #fff;
+}
+
+.tr:not(:first-child){
+    border-top: 1px solid #DC1D23;
+}
+
+.file_select_container {
+    display: flex;
+    column-gap: 8px;
+}
+
+.input_file {
+    display: none;
+}
+
+.file_select_button {
+    width: 25%;
+    height: 32px;
+    line-height: 32px;
+}
+
+.select_file_name {
+    width: calc(100% - 25% - 8px);
+    border: 1px solid #666;
+    background: #eee;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 8px;
+    border-radius: 4px;
+}
+
+.file_upload_button {
+    width: 100%;
+    margin-top: 16px;
+    padding: 8px;
+}
+
+.file_list_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file_download {
+    padding: 4px 8px;
+}
