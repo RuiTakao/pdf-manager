@@ -42,7 +42,7 @@
                 <tr class="tr"><th class="th">PDF リスト</th></tr>
             </thead>
             <tbody class="tbody">
-                @foreach ($file_list as $file)
+                @forelse ($file_list as $file)
                     <tr class="tr">
                         <td class="td">
                             <div class="file_list_container">
@@ -54,8 +54,12 @@
                                 </form>
                             </div>
                         </td>
-                @endforeach
-                </tr>
+                    </tr>
+                @empty
+                    <tr class="tr">
+                        <td class="td">ファイルはありません</td>
+                    </tr>
+                @endforelse
             </tbody>
         </table>
     </div>
