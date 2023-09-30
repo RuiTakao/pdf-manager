@@ -183,9 +183,14 @@
         display: block;
     }
 
+    .list_file_name {
+        font-size: 18px;
+    }
+
     .file_download {
         display: block;
         width: 100%;
-        margin-top: 8px;
+        margin-top: 16px;
+        padding: 8px;
     }
 }
