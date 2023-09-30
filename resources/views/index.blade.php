@@ -25,9 +25,9 @@
                         <form action="{{ route('upload') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="file_select_container">
+                                <div class="select_file_name" id="select_file_name"></div>
                                 <label for="input_file" class="file_select_button button">PDFファイルを選択してください</label>
                                 <input id="input_file" class="input_file" type="file" name="pdf" accept=".pdf">
-                                <div class="select_file_name" id="select_file_name"></div>
                             </div>
                             <input class="file_upload_button button" type="submit">
                         </form>

@@ -19,7 +19,7 @@
 }
 
 .alert {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 1rem;
     border: 1px solid transparent;
@@ -75,7 +75,7 @@
 
 .table_container {
     margin: 0 auto;
-    width: 960px;
+    max-width: 960px;
     border-radius: 4px;
     overflow: hidden;
     border: 1px solid #DC1D23;
@@ -121,6 +121,7 @@
     width: 25%;
     height: 32px;
     line-height: 32px;
+    order: 1;
 }
 
 .select_file_name {
@@ -131,6 +132,7 @@
     line-height: 32px;
     padding-left: 8px;
     border-radius: 4px;
+    order: 2;
 }
 
 .file_upload_button {
@@ -147,4 +149,43 @@
 
 .file_download {
     padding: 4px 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .header_title {
+        font-size: 18px;
+    }
+
+    .main {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .file_select_container {
+        display: block;
+    }
+
+    .file_select_button {
+        width: 100%;
+        display: block;
+        margin-top: 8px;
+    }
+    
+    .select_file_name {
+        width: 100%;
+    }
+
+    .file_upload_button {
+        margin-top: 32px;
+    }
+
+    .file_list_container {
+        display: block;
+    }
+
+    .file_download {
+        display: block;
+        width: 100%;
+        margin-top: 8px;
+    }
 }
